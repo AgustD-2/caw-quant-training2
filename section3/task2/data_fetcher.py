@@ -28,5 +28,4 @@ def data_fetcher(msg):
         pslow = talib.SMA(close, timeperiod=period2)
         d = {'fast': pfast, 'slow': pslow}
         indicator_df = pd.DataFrame(data=d)
-        # print(indicator_df)
         return indicator_df
